@@ -16,12 +16,16 @@ for i in vicpats:
     if i not in vicpats_original:
         vicpats_original.append(i)
 
-dic_ = {}
+dict_ = {}
 for x,y in vicpats_original:
-    dic_.setdefault(x,[]).append(y)
+    dict_.setdefault(x,[]).append(y)
+
 
 print(list_1)
 print(list_2)
 print(vicpats)
 print(vicpats_original)
-print(dic_)
+print(dict_)
+
+for i, v in enumerate(dict_.items(), start=1):
+    print(i, v)
